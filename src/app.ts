@@ -5,7 +5,7 @@ import './models/todo'; // Quan trọng: Import file model để nó được đ
 import cors from "cors"
 const app: Express = express(); // Định kiểu cho 'app'
 app.use(express.json());
-app.use(cors())
+app.use(cors());
 app.use('/', todoRoutes);
 
 const PORT = process.env.PORT || 3001;
